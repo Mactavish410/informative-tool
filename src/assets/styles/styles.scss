@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+// ---Const---
+$text-color: #fff;
+$bg-main: #261e35;
+$bg-content: #372c44;
+$bg-block: #3c354a;
+// $main-bg:
+
+// ---Mixin---
+@mixin text {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 24px;
+  font-style: normal;
+}
+
+@mixin block33 {
+  box-sizing: border-box;
+  width: 33%;
+  height: 300px;
+  padding: 10px;
+  background-color: $bg-block;
+  border-radius: 20px;
+}
+
+@mixin block66 {
+  box-sizing: border-box;
+  width: calc(66% + 7px / 2);
+  height: 300px;
+  padding: 10px;
+  background-color: $bg-block;
+  border-radius: 20px;
+}
+
+@mixin anim-block {
+  @include block33;
+  transition: 0.3s linear;
+
+  &.active {
+    @include block66;
+  }
+}
