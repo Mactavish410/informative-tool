@@ -38,7 +38,6 @@ const Info = () => {
   }, []); // Пустой массив зависимостей
 
   console.log(ip);
-  console.log(error);
 
   return (
     <div className={styles.main}>
