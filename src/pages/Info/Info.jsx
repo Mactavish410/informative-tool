@@ -26,7 +26,7 @@ const Info = () => {
     const fetchIpinfo = async (ipAddress) => {
       try {
         const response = await axios.get(
-          `http://ip-api.com/json/${ipAddress}?fields=status,message,continent,country,countryCode,region,regionName,city,zip,lat,lon,timezone,currency,isp,org,as,mobile,proxy,hosting,query`
+          `https://ip-api.com/json/${ipAddress}?fields=status,message,continent,country,countryCode,region,regionName,city,zip,lat,lon,timezone,currency,isp,org,as,mobile,proxy,hosting,query`
         );
         setIpinfo(response.data); // Установка информации о IP
 
