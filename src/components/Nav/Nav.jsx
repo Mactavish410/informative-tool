@@ -7,22 +7,40 @@ const Nav = () => {
     <nav className={styles.nav}>
       <ul>
         <li>
-          <FaHome />
+          <a href="">
+            <FaHome />
+          </a>
+          <span>Home</span>
         </li>
         <li>
-          <FaCalculator />
+          <a href="">
+            <FaCalculator />
+          </a>
+          <span>Home</span>
         </li>
         <li>
-          <FaHome />
+          <a href="">
+            <FaHome />
+          </a>
+          <span>Home</span>
         </li>
         <li>
-          <FaCalculator />
+          <a href="">
+            <FaCalculator />
+          </a>
+          <span>Home</span>
         </li>
         <li>
-          <FaHome />
+          <a href="">
+            <FaHome />
+          </a>
+          <span>Home</span>
         </li>
         <li>
-          <FaCalculator />
+          <a href="">
+            <FaCalculator />
+          </a>
+          <span>Portfolio</span>
         </li>
       </ul>
     </nav>

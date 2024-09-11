@@ -1,0 +1,19 @@
+@import "../../assets/styles/styles.scss";
+
+.ip_main {
+  @include block_short;
+  ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        font-size: 80%;
+      }
+    }
+  }
+}

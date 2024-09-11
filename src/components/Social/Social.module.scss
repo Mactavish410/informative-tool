@@ -1,0 +1,24 @@
+@import "../../assets/styles/styles.scss";
+
+.social_main {
+  @include block_short;
+  ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 7px;
+    li {
+      list-style-type: none;
+      a {
+        // font-size: 40px;
+        color: $text-color;
+        text-decoration: none;
+        transition: 0.4s linear;
+        &:hover {
+          color: $color-page;
+        }
+      }
+    }
+  }
+}

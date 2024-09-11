@@ -1,10 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+ul,
+p,
+h2 {
+  padding: 0;
+  margin: 0;
+  li {
+    list-style-type: none;
+  }
+}
+
 // ---Const---
 $text-color: #fff;
-$bg-main: #261e35;
-$bg-content: #372c44;
-$bg-block: #3c354a;
+$color-page: #ff891d;
+$bg-main: #0f0f0f;
+$bg-block: #151515;
 // $main-bg:
 
 // ---Mixin---
@@ -12,33 +22,48 @@ $bg-block: #3c354a;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1vw;
   font-style: normal;
-}
-
-@mixin block33 {
-  box-sizing: border-box;
-  width: 33%;
-  height: 300px;
-  padding: 10px;
-  background-color: $bg-block;
-  border-radius: 20px;
-}
-
-@mixin block66 {
-  box-sizing: border-box;
-  width: calc(66% + 7px / 2);
-  height: 300px;
-  padding: 10px;
-  background-color: $bg-block;
-  border-radius: 20px;
-}
-
-@mixin anim-block {
-  @include block33;
-  transition: 0.3s linear;
-
-  &.active {
-    @include block66;
+  svg {
+    font-size: 2vw;
   }
 }
+
+@mixin block_short {
+  box-sizing: border-box;
+  width: 24%;
+  height: 18vw;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: $bg-block;
+}
+
+@mixin block_middle {
+  box-sizing: border-box;
+  width: 49.25%;
+  height: 18vw;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: $bg-block;
+}
+
+@mixin block_long {
+  box-sizing: border-box;
+  width: 100%;
+  height: 18vw;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: $bg-block;
+}
+
+// @mixin anim-block {
+//   @include block33;
+//   transition: 0.3s linear;
+
+//   &.active {
+//     @include block66;
+//   }
+// }

@@ -1,5 +1,10 @@
-.main {
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user_info {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  justify-content: space-between;
 }
